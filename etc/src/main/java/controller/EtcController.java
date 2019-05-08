@@ -30,6 +30,7 @@ public class EtcController extends HttpServlet {
 		if(command.contentEquals("pwsend")) {
 			etcService.pwSend(request);
 		}else if(command.contentEquals("proxy")) {
+			System.out.println("proxy요청");
 			//서비스 메소드 호출
 			String result = etcService.proxy(request);
 			//데이터를 결과 페이지에 출력

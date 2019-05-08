@@ -54,6 +54,9 @@ public class EtcService {
 		try {
 			//데이터를 받아올 주소 가져오기
 			String addr = request.getParameter("addr");
+			//파라미터 주소 출력
+			//System.out.println(addr);
+			
 			//위의 주소를 URL로 만들기
 			URL url = new URL(addr);
 			//HttpURLConnection 만들기
@@ -82,7 +85,7 @@ public class EtcService {
 		
 		
 		
-		
+		//System.out.println(result);
 		return result;
 	}
 	
